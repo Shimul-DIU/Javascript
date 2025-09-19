@@ -1,0 +1,9 @@
+console.log(Math.sqrt(25));
+console.log(Math.pow(3,3));
+console.log(Math.abs(-34));
+console.log(Math.max(-34,5,3,33));
+console.log(Math.min(-34,7.8,8));
+console.log(Math.floor(-4.53));
+console.log(Math.ceil(-4.53));
+console.log(Math.round(4.5));
+console.log(Math.floor(Math.random()*5+13));
