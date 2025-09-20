@@ -1,0 +1,26 @@
+{
+    "orderid":12323,
+    "customer_name":"Md. Shimul",
+    "customer_phone":"0192323434",
+    "address":{
+        "road":"vbanipur bazar",
+        "district":"jamalpur",
+        "country":"bangladesh"
+    },
+    "items":[
+        {
+            "name":"laptop",
+            "quantity":1,
+            "price":55433
+        },
+        {
+            "name":"mouse",
+            "quantity":2,
+            "price":433
+        }
+    ],
+        
+    "payment_method" :"bkash",
+    "payment_status":"paid",
+    "delivary_status":"processing"
+}
