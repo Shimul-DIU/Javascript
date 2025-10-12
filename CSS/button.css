@@ -2,3 +2,13 @@
     font-size: larger;
     background-color: aqua;
 }
+button{
+    margin-bottom: 10px;
+    padding: 0px 10px 20px 0px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+input{
+    margin-bottom:10px;
+}

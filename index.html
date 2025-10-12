@@ -5,18 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/button.css">
+
     <style>
+       button{
+    margin-bottom: 10px;
+    padding: 0px 10px 20px 0px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+} 
+    .container{
+        display: flex;
+        justify-content:center;
+        align-items: baseline;
+        height: 400px;
+        border: 2px solid black;
+    }
+    .container div{
+        padding:20px;
+        border: 1px solid black;
+        margin: 4px;
+        background-color: aqua;
         
+    }
     </style>
+    
 </head>
 <body>
-    <div>
-        <h2>This is heading 2</h2>
+    <form action="" id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="inputName"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="car">Car: </label>
+        <select name="car" id="car">
+            <option value="Toyota">Toyota</option>
+            <option value="bugati">Bugatti</option>
+            <option value="hunda">Hunda</option>
+        </select>
+        <br><br>
+         <input type="submit">
+    </form>
+    <script>
+        let set=document.querySelector("input[name=name]")
+        set.addEventListener("change", function(event){
+            console.log(event.target.className);
+            
+        })
+    </script>
+    <textarea name="tex" id=""></textarea>
+    <span >
+        Hi, you press 
+    </span>
+    <p>hi</p>
+    <span> second span tag</span>
+    <div class="contai">
+        <div>A</div>
+    <div>B</div>
+        <div>C</div>
+    </div>
+    <ul>
+        <li><button>music1</button><li>
+        <li><button>music2</button></li>
+        <li><button>music3</button></li>
+    </ul>
+    <div id="contain">
+        <h2 id="h">This is heading 2</h2>
         <h3>This is heading 3</h3>
         <h4>This is heading 4</h4>
     </div>
-    <h4>this is heading 4</h4>
-    <p id="p">this is peragraph</p>
+    <!-- <h4>this is heading 4</h4>
+    <p id="p">this is peragraph</p> -->
     <button onclick="ad()">Add style</button>
     <button onclick="remov()">remove style</button><br>
     <button onclick="Prev()" id="pre">previous</button>
@@ -39,6 +98,15 @@
      <button class="Music">Coldply</button>
      <button class="Music">emin feat</button>
      <button class="Music">tatbtha</button>
-     <script src="music.js"></script>
+     
+     <!-- <script src="music.js"></script>
+     <script src="createElement.js"></script> -->
+     <!-- <script src="animation.js"></script> -->
+ <!--     <script src="selector.js"></script> -->
+    <!--   <script  >
+       let m=document.getElementsByName("tex")[0]
+       // console.log(toCelsius(90));
+      </script> -->
+      <script src="submitEvent.js"></script>
 </body>
 </html>
