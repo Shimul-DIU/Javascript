@@ -11,3 +11,5 @@ form.addEventListener("submit",function(event){
     }
     console.log(object);
 })
+let nums=[9,0,8]
+nums.forEach()
