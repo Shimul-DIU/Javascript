@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<script>
+    let ans=[]
+    let peragraph=document.getElementById('pera')
+    let celcious=[0,27,45,34]
+    function Fahrenherit(arr){
+        arr.forEach(element => { 
+            ans.push(element*9/5+32)
+        });
+        console.log(ans)
+    }
+    Fahrenherit(celcious)
+    // ===============================
+    function Change(mark){
+        if (mark<60){
+            return mark+=5
+        }
+        else{
+            return mark
+        }
+    }
+    let marks=[55,60,80,40]
+    marks.forEach((mark,index)=>{
+        marks[index]=Change(mark)
+    })
+    console.log(marks)
+</script>
+</body>
+</html>
