@@ -5,4 +5,5 @@ let Setinterval=setInterval(() => {
    if (num==11){
     clearInterval(Setinterval)
    }
+
 }, 4000);
