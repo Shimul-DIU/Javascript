@@ -1,4 +1,4 @@
-function Information(name,roll,cgpa,countru,friends){
+/* function Information(name,roll,cgpa,countru,friends){
     this.name=name;
     this.roll=roll;
     this.cgpa=cgpa;
@@ -33,4 +33,22 @@ console.log(obj)
 
 const sym1 = Symbol("id");
 const sym2 = Symbol("id");
-console.log(sym1 === sym2); // false (সবসময় ইউনিক)
+console.log(sym1 === sym2);  */
+
+// access object items
+let Employee={
+    name:'shimul',
+    age:20,
+    divition:'dhaka'
+}
+Employee.name='mustafa'
+console.log(Employee)
+
+let manager={
+    ...Employee,
+    salary:30000,
+    
+}
+console.log(manager)
+
+

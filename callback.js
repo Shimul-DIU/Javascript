@@ -15,6 +15,7 @@ function outer(callback){
 function callLater(){
     console.log('task 1')
     console.log('task 2')
+    
 }
 
 outer(callLater)
