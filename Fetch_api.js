@@ -1,15 +1,17 @@
 function Fakeapi(){
-    let url='https://jsonplaceholder.typicode.com/users'
+    let url='https://jsonplaceholder.typicode.com/users/1';
+
     fetch(url)
-    .then(response=>response.json())
+    .then((response)=>
+   {
+    console.log(response.body);
+          console.log(response);
+        })
     .then(data=>
     {
-        let div=document.getElementById('div')
-        for(let people of data){
-           let pera= document.createElement('p')
-           pera.innerHTML=` name is : ${people.name} `
-           div.appendChild(pera)
+       console.log(data);
         }
-    }
+
     )
 }
+Fakeapi();
