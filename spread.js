@@ -17,3 +17,12 @@ function sum(x,y,z,...args){
 }
 let numbers=[1,2,3]
 console.log(sum(...numbers,7,8,9))
+
+
+let nums={
+    name:'shimul',
+    roll:'',
+    cgpa:''
+}
+let copy={...nums};
+console.log(copy)
