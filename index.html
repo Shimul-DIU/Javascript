@@ -25,6 +25,12 @@
     </div>
 
   </div>
+
+  <button id="pera" onclick="clickHandler()">click me</button>
+  <button id="out">show the outpur</button>
+  <button id="count">count : 0</button>
+  <button onclick="increase()" id="inc">Increase</button>
+  <button onclick="decrease()" id="dec">decrease</button>
 </body>
     <!-- <script src="Fetch_api.js"> -->
 
@@ -48,7 +54,21 @@
        src="lottieflow-success-05-000000-linear.json "  background="transparent"  speed="0.5"  style="width: 100px; height: 100px;" loop autoplay
       ></lottie-player>> -->
       <!-- /<script src="Fetch_api.js"></script> -->
+  >
+       <!-- <script src="./axios.js"></scrip> -->
 
-       <script src="./axios.js"></script>
+        <script >
+          const  peragraph=document.getElementById("pera");
+          const  output=document.getElementById("out");
+          function clickHandler(){
+            output.innerHTML="Hello shimul"
+          }
+          function increase(){
+            let count=document.getElementById("count");
+            let value=parseInt(count.innerHTML.split(":")[1]);
+            value++;
+            count.innerHTML="count : "+value;
+          }
+          </script>
 </body>
 </html>

@@ -1,8 +1,14 @@
+// default parameter
+const defaultFunction=(name='shimul')=>{
+    console.log(`My name is ${name}`)
+}
+defaultFunction();
+defaultFunction('mustafa')
 let num =3
 let ary=[1,2,3]
 function display(a=1,...b){
     console.log(a)
- 
+
     this.b=b
     console.log(b)
     console.log(typeof(b))
